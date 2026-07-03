@@ -1,0 +1,37 @@
+{
+  "name": "omniops-slack-agent",
+  "version": "1.0.0",
+  "description": "Autonomous ITOps & Context Synthesis Slack Agent leveraging Slack AI, MCP (Model Context Protocol), and Real-Time Search (RTS) API.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test:agent": "tsx scripts/test-agent.ts",
+    "mcp:server": "tsx src/mcp-server/sampleOpsServer.ts"
+  },
+  "keywords": [
+    "slack",
+    "slack-agent",
+    "mcp",
+    "model-context-protocol",
+    "rts-api",
+    "slack-ai",
+    "bolt-js"
+  ],
+  "author": "Hackathon Team",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "@slack/bolt": "^4.2.0",
+    "@slack/web-api": "^7.8.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
